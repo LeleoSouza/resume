@@ -1,7 +1,7 @@
 import React from "react";
 import Experience from "../components/experience";
 import Intro from "../components/intro/index";
-
+// import Navbar from "../components/navbar/index";
 function Pages() {
   return (
     <div className="pages">
