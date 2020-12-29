@@ -1,6 +1,7 @@
 import Typical from "react-typical";
 import styles from "./styles";
 import { Row, Col } from "react-bootstrap";
+import "./index.css";
 function Intro(props: any) {
   return (
     <div className="container" style={styles.container}>
@@ -15,11 +16,20 @@ function Intro(props: any) {
         </Col>
         <Col>
           {" "}
-          <Typical
-            steps={["Web Developer", 1000, "Designer", 1000]}
-            loop={Infinity}
-            wrapper="p"
-          />
+          <div className="content">
+            <Typical
+              steps={[
+                "Front End Developer",
+                1000,
+                "Web Designer",
+                1000,
+                "Back End Developer",
+                1000,
+              ]}
+              loop={3}
+              wrapper="p"
+            />
+          </div>
         </Col>
       </Row>
     </div>

@@ -1,15 +1,15 @@
 const styles = {
   container: {
-    backgroundColor: "gray",
+    backgroundColor: "white",
     height: "100vh",
-    color: "white",
+    color: "black",
     width: "70%",
     marginLeft: "15%",
     marginRight: "15%",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
-    fontSize: "30px",
+    // alignItems: "center",
+    fontSize: "20px",
   },
 };
 

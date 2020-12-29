@@ -1,30 +1,26 @@
 import React from "react";
-import Experience from "../components/experience";
-import Intro from "../components/intro/index";
-// import Navbar from "../components/navbar/index";
+import styles from "./styles";
+import Experience from "./experience";
+import Intro from "./intro/index";
+import AboutMe from "./aboutMe";
+import Contact from "./contact";
 function Pages() {
   return (
     <div className="pages">
       <div className="intro" style={styles.intro}>
         <Intro />
       </div>
+      <div className="aboutme" style={styles.experience}>
+        <AboutMe />
+      </div>
       <div className="experience" style={styles.experience}>
         <Experience />
+      </div>
+      <div className="experience" style={styles.experience}>
+        <Contact />
       </div>
     </div>
   );
 }
 
-const styles = {
-  intro: {
-    backgroundColor: "black",
-    height: "100vh",
-    color: "white",
-  },
-  experience: {
-    backgroundColor: "gray",
-    height: "100vh",
-    color: "pink",
-  },
-};
 export default Pages;
