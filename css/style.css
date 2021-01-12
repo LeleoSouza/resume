@@ -12,12 +12,6 @@ body {
   height: 100vh;
 }
 
-.intro video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 .intro h1 {
   position: absolute;
   top: 50%;
@@ -36,4 +30,20 @@ section h1 {
   padding-top: 300px;
   text-align: center;
   font-size: 80px;
+}
+.aboutMe{
+background-color: #13445e;
+margin: 0 auto;
+display: block;
+padding: 40px 0;
+text-align: center;
+color: #fff;
+font-size: 80px;
+opacity: 0;
+transition: 1s;
+width: 0%;
+}
+.aboutMe.show{
+  opacity: 1;
+  width: 100%;
 }

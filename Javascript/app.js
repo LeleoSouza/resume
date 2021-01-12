@@ -1,5 +1,5 @@
 const intro = document.querySelector(".intro");
-const video = intro.querySelector("video");
+const video = intro.querySelector(".img");
 const text = intro.querySelector("h1");
 //END SECTION
 const section = document.querySelector("section");
@@ -10,7 +10,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 9000,
+  duration: 1500,
   triggerElement: intro,
   triggerHook: 0
 })
@@ -29,18 +29,13 @@ let scene2 = new ScrollMagic.Scene({
   .setTween(textAnim)
   .addTo(controller);
 
-//Video Animation
-let accelamount = 0.1;
-let scrollpos = 0;
-let delay = 0;
 
 scene.on("update", e => {
   scrollpos = e.scrollPos / 1000;
 });
-
-setInterval(() => {
-  delay += (scrollpos - delay) * accelamount;
-  console.log(scrollpos, delay);
-
-  video.currentTime = delay;
-}, 33.3);
+// TEST
+let scene3 = new ScrollMagic.Scene({
+  triggerElement: '.aboutMe'
+})
+scene3.setClassToggle(".aboutMe", 'show')
+scene3.addTo(controller)
